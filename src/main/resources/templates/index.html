@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fuerza Aérea del Perú - Olimpiadas</title>
+  <link rel="stylesheet" th:href="@{/css/inicio/style.css}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <img th:src="@{/imagenes/inicio/logo.png}" alt="Logo FAP" class="logo" />
+    <div class="titulo">
+      <h1>Fuerza Aérea del Perú</h1>
+      <h1 class="text-center">Olimpiadas</h1>
+    </div>
+    <div class="iconos">
+        <a href="/login" class="btn btn-success">Iniciar Sesion</a>
+        <a href="#"><img th:src="@{/imagenes/inicio/lupa_icon.png}" alt="Buscar"></a>
+        <a href="#"><img th:src="@{/imagenes/inicio/menu_icon.png}" alt="Menú"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <img th:src="@{/imagenes/inicio/banner.png}" alt="banner" />
+    <div class="iconos-menu">
+      <div><img th:src="@{/imagenes/inicio/licenciados-icon.png}" /><p>Licenciados</p></div>
+      <div><img th:src="@{/imagenes/inicio/partidos-icon.png}" /><p>Partidos</p></div>
+      <div><img th:src="@{/imagenes/inicio/resultados-icon.png}" /><p>Resultados</p></div>
+    </div>
+  </section>
+
+  <section class="contenido">
+    <div class="actividad">
+      <div class="texto">
+        <h3>ACTIVIDADES DEPORTIVAS</h3>
+        <h2>LICENCIADOS DE LAS FUERZAS AÉREAS DEL PERÚ</h2>
+        <p>
+          El fútbol es una de las principales actividades deportivas que practican los licenciados de la Fuerza Aérea del Perú...
+        </p>
+        <button>Más Detalles</button>
+      </div>
+      <img th:src="@{/imagenes/inicio/equipo.png}" alt="Equipo EO FAP" />
+    </div>
+
+    <div class="amistosos">
+      <img th:src="@{/imagenes/inicio/entrenamiento.png}" alt="Entrenamiento" />
+      <div class="texto">
+        <h3>ENTRENAMIENTO</h3>
+        <h2>PARTIDOS AMISTOSOS DE LOS LICENCIADOS</h2>
+        <p>
+          Los entrenamientos de fútbol de los licenciados son espacios de preparación física, técnica y emocional...
+        </p>
+        <button>Más Detalles</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h2>SÍGUENOS EN:</h2>
+    <div class="redes">
+      <img th:src="@{/imagenes/inicio/facebook_icon.png}" alt="Facebook" />
+      <img th:src="@{/imagenes/inicio/whatsapp_icon.png}" alt="Whatsapp" />
+      <img th:src="@{/imagenes/inicio/instagram_icon.png}" alt="Instagram" />
+    </div>
+  </footer>
+</body>
+</html>

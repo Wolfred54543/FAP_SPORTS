@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/css/styleDelegado.css}">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img th:src="@{/imagenes/inicioSesion/logo.png}" alt="Fuerza Aérea del Perú Logo" class="logo">
+            <div class="logo-text">
+                <h1>Fuerza Aérea del Perú</h1>
+                <h2>Olimpiadas</h2>
+            </div>
+        </div>
+        <div class="social-icons">
+            <!-- <a href="#"><img class="icon" src="/facebook_icon.png"/></a>
+            <a href="#"><img class="icon" src="/whatsapp_icon.png"/></a> -->
+            <a href="#"><img th:src="@{/imagenes/inicio/lupa_icon.png}" width="20" alt="Buscar"></a>
+            <a href="#"><img th:src="@{/imagenes/inicio/menu_icon.png}" width="20" alt="Menú"></a>
+        </div>
+
+        <div class="dropdown-menu" id="dropdownMenu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Partidos</a></li>
+                <li><a href="#">Jugadores</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Contáctenos</a></li>
+            </ul>
+        </div>
+        <div class="search-bar" id="searchBar">
+            <form action="#" method="get">
+                <input type="text" placeholder="Buscar..." name="search">
+                <button type="submit">Buscar</button>
+                <span class="close-search">×</span>
+            </form>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <div class="section-text">
+            <div class="section-title">
+                <h3 style="text-align: center; color:aliceblue">BIENVENIDOS A DEPORTES FAP</h3>
+            </div>
+            <div class="section-content">
+                <p>En nuestra comunidad, el fútbol no tiene edad. Aquí celebramos la pasión, el compañerismo y la sana
+                    competencia entre jugadores con trayectoria y esperiencia. Ya sea que quieras revivir grandes
+                    momentos o simplemente mantenerte en forma, estás en el lugar correcto.</p>
+                <p>¡Porque el fútbol se juega con cabeza y corazón!</p>
+            </div>
+        </div>
+        <div class="section-image">
+            <!-- Team photo placeholder -->
+            <img th:src="@{/imagenes/inicio/banner.png}" alt="Equipo de fútbol" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="carousel" id="heroCarousel">
+            <div class="carousel-inner">
+               <img th:src="@{/imagenes/inicio/banner_enfrentamiento.avif}" alt="Imagen 1" class="active">
+                <img src="./partido2.png" alt="Imagen 2">
+                <img src="./partido3.png" alt="Imagen 3">
+                <img src="./partido4.png" alt="Imagen 4">
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="section-text">
+            <div class="section-title">
+                <h3>Actividades deportivas</h3>
+                <h2>Licenciados de las fuerzas aereas del peru</h2>
+            </div>
+            <div class="section-content">
+                <p>El fútbol es una de las principales actividades deportivas que practican los licenciados de la Fuerza
+                    Aérea del Perú. Esta actividad no solo buscan fomentar el bienestar físico y mental, sino también
+                    reforzar los valores aprendidos durante su formación militar: el trabajo en equipo, la
+                    perseverancia, el respeto y la solidaridad.</p>
+                <p>Todos los torneos y competencias deportivas demuestran que el espíritu militar trasciende las bases,
+                    llevándose también a las canchas y espacios deportivos.</p>
+                <p>¡Acompáñanos y sé parte del compromiso por una vida activa, saludable y en comunidad!</p>
+            </div>
+            <a href="#" class="btn">Más Detalles</a>
+        </div>
+        <div class="section-image">
+            <!-- Team photo placeholder -->
+            <img th:src="@{/imagenes/imgRoles/equipo.png}" alt="Equipo de fútbol" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="section-image">
+
+            <img th:src="@{/imagenes/imgRoles/entrenamiento.png}" alt="Entrenamiento" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="section-text">
+            <div class="section-title">
+                <h3>Entrenamiento</h3>
+                <h2>Partidos amistosos de los licenciados</h2>
+            </div>
+            <div class="section-content">
+                <p>Los entrenamientos de fútbol de los licenciados son espacios de preparación física, técnica y
+                    emocional. Aquí, los exintegrantes de la FAP se reúnen periódicamente para seguir fortaleciendo sus
+                    capacidades y mantenerse activos.</p>
+                <p>Los partidos amistosos con otros equipos de licenciados, clubes locales o instituciones vecinas
+                    permiten mantener el nivel competitivo y reforzar los lazos de amistad y hermandad.</p>
+                <p>Más que un juego, el fútbol es una herramienta de unión, salud y liderazgo. Cada sesión es una
+                    oportunidad para mejorar, compartir y seguir construyendo comunidad.</p>
+            </div>
+            <a href="#" class="btn">Más Detalles</a>
+        </div>
+    </section>
+
+    <h1>JUGADORES DESTACADOS</h1>
+    <section class="content-section">
+        <img th:src="@{/imagenes/imgRoles/MESSI.jpg}" alt="Entrenamiento" style="width: 25%; height: 25%; object-fit: cover;">
+        <img th:src="@{/imagenes/imgRoles/MESSI.jpg}" alt="Entrenamiento" style="width: 25%; height: 25%; object-fit: cover;">
+        <img th:src="@{/imagenes/imgRoles/MESSI.jpg}" alt="Entrenamiento" style="width: 25%; height: 25%; object-fit: cover;">
+        <img th:src="@{/imagenes/imgRoles/MESSI.jpg}" alt="Entrenamiento" style="width: 25%; height: 25%; object-fit: cover;">
+        <div class="section-text">
+            <div class="section-title">
+                <h3>Entrenamiento</h3>
+                <h2>Partidos amistosos de los licenciados</h2>
+            </div>
+            <a href="#" class="btn">Más Detalles</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">SÍGUENOS EN:</div>
+        2023 Company Name, Inc. All rights reserved
+        <div class="footer-social">
+            <a href="#"><img class="footer-icon" th:src="@{/imagenes/imgRoles/escudos/facebook_icon.png}" /></a>
+            <a href="#"><img class="footer-icon"  th:src="@{/imagenes/imgRoles/escudos/whatsapp_icon.png}" /></a>
+            <a href="#"><img class="footer-icon"  th:src="@{/imagenes/imgRoles/escudos/instagram_icon.png}" /></a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+
+            menuToggle.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('active');
+            });
+
+
+            document.addEventListener('click', function (e) {
+                if (!menuToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('active');
+                }
+            });
+
+
+            const searchToggle = document.querySelector('.search-toggle');
+            const searchBar = document.getElementById('searchBar');
+            const closeSearch = document.querySelector('.close-search');
+
+            searchToggle.addEventListener('click', function (e) {
+                e.preventDefault();
+                searchBar.classList.toggle('active');
+
+                dropdownMenu.classList.remove('active');
+            });
+
+            closeSearch.addEventListener('click', function () {
+                searchBar.classList.remove('active');
+            });
+
+
+            document.addEventListener('click', function (e) {
+                if (!searchToggle.contains(e.target) && !searchBar.contains(e.target)) {
+                    searchBar.classList.remove('active');
+                }
+            });
+            const carousel = document.getElementById('heroCarousel');
+            const images = carousel.querySelectorAll('.carousel-inner img');
+            let currentIndex = 0;
+            const totalImages = images.length;
+
+
+            function showImage(index) {
+
+                images.forEach(img => {
+                    img.classList.remove('active');
+                });
+
+
+                images[index].classList.add('active');
+            }
+
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % totalImages;
+                showImage(currentIndex);
+            }
+
+
+            let slideInterval = setInterval(nextSlide, 5000);
+
+
+            carousel.addEventListener('mouseenter', () => {
+                clearInterval(slideInterval);
+            });
+
+            carousel.addEventListener('mouseleave', () => {
+                slideInterval = setInterval(nextSlide, 5000);
+            });
+
+
+            showImage(0);
+        });
+    </script>
+</body>
+
+</html>

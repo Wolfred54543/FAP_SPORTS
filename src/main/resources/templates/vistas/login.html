@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Deportes FAP</title>
+  <link rel="stylesheet" th:href="@{/css/login.css}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img th:src="@{/imagenes/inicioSesion/logo.png}" alt="Escudo Fuerza Aérea del Perú" class="logo-header">
+      <h2 class="titulo-header">Deportes FAP</h2>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="login-container">
+      <div class="login-box">
+        <h1>Iniciar Sesión</h1>
+        <p>¡Bienvenido de nuevo! Introduce tus datos.</p>
+        <form th:action="@{/login}" method="post">
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" placeholder="Ingrese su correo" name="username" autocomplete="off" required />
+
+          <label for="contrasena">Contraseña</label>
+          <input type="password" id="contrasena" placeholder="********" name="password" required />
+
+          <a href="#" class="olvide">Olvidé mi contraseña</a>
+
+          <button type="submit" class="btn-principal">Iniciar Sesión</button>
+            <!-- <div th:if="${param.error}" class="alert alert-danger mt-3">
+                Usuario o contraseña incorrectos.
+            </div> -->
+          <button type="button" class="btn-google">
+            <img src="https://www.google.com/favicon.ico" alt="Google" />
+            Ingresar con Google
+          </button>
+
+          <p class="registro">¿No tienes una cuenta? <a th:href="@{/registro}">Regístrate</a></p>
+        </form>
+        <a th:href="@{/index}" class="inicio">Página de Inicio</a>
+      </div>
+    </div>
+
+    <div class="imagen-container">
+      <img th:src="@{/imagenes/inicioSesion/Banner_Login.png}" alt="Jugador de fútbol" class="imagen-futbol"/>
+    </div>
+  </div>
+</body>
+</html>

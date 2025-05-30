@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="componentes/head :: head">
+    
+</head>
+<body>
+    <h1>Lista de Nombres de Usuarios</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombres</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="nombre : ${nombres}">
+                <td th:text="${nombre}"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <button class="btn btn-primary">Procesar</button>
+    </div>
+</body>
+</html>

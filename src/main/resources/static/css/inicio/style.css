@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    background: #f2f2f2;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    background: #fff;
+    border-bottom: 1px solid #000;
+  }
+
+  .header h1 {
+    text-align: left;
+  }
+  
+  .logo {
+    width: 60px;
+  }
+  
+  .titulo h1 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .titulo p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .iconos img {
+    width: 24px;
+    margin-left: 10px;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .iconos-menu {
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    padding: 1em 0;
+    text-align: center;
+  }
+  
+  .iconos-menu div img {
+    width: 40px;
+    margin-bottom: 0.5em;
+  }
+  
+  .contenido {
+    padding: 1em;
+  }
+  
+  .actividad,
+  .amistosos {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    margin-bottom: 1em;
+  }
+  
+  .actividad .texto,
+  .amistosos .texto {
+    flex: 1;
+    padding: 1em;
+  }
+  
+  .actividad img,
+  .amistosos img {
+    flex: 1;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .actividad h3,
+  .amistosos h3 {
+    color: red;
+    margin: 0;
+  }
+  
+  button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    cursor: pointer;
+  }
+  
+  footer {
+    background: #c3967d;
+    padding: 2em 1em;
+    text-align: center;
+  }
+  
+  footer h2 {
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+  
+  footer .redes img {
+    width: 40px;
+    margin: 0 1em;
+  }
